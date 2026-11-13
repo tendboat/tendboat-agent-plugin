@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "tendboat": {
+      "type": "stdio",
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/tendboat",
+      "args": ["mcp", "--plugin"],
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 1800,
+      "required": true,
+      "_comment": "Claude Code only. Codex reads `mcp.json` (no dot) via the Agent Plugins manifest at the plugin root, which resolves `./bin/tendboat` itself and never substitutes this variable. Both point at the same binary and both pass `--plugin`; the repository to analyse is a parameter of every tool, so neither depends on the working directory it is started in."
+    }
+  }
+}

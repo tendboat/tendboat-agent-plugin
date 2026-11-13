@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tendboat",
+  "description": "Cross-language taint analysis as a plugin: tendboat holds the whole-repo index, the contract knowledge base and the solver; your agent supplies the judgement.",
+  "owner": {
+    "name": "tendboat"
+  },
+  "plugins": [
+    {
+      "name": "tendboat",
+      "description": "Taint-analyse a polyglot repository. tendboat remembers the parts of the repo your agent is not looking at: every function, call, HTTP route and deploy hop, indexed deterministically, plus a solver that composes it to a fixpoint. Finds injection, secret-leak, path-traversal, SSRF, deserialization and missing-authorization defects that cross a file, a language or a process boundary. No model of its own -- your agent is the only one.",
+      "author": {
+        "name": "Nikolai Lugovskoi"
+      },
+      "category": "security",
+      "source": "./plugin"
+    }
+  ]
+}

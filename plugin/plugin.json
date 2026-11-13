@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tendboat",
+  "version": "0.4.0",
+  "description": "Cross-language taint analysis. tendboat indexes the whole repository deterministically and solves taint flows over it; the host agent supplies structure and security judgement per file, as validated JSON. Nothing here calls a model -- the host is the only one.",
+  "homepage": "https://tendboat.com/",
+  "repository": "https://github.com/tendboat/tendboat-agent-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "taint",
+    "sast",
+    "security",
+    "static-analysis",
+    "cross-language",
+    "polyglot"
+  ],
+  "author": {
+    "name": "Nikolai Lugovskoi"
+  }
+}
